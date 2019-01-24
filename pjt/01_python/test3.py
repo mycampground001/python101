@@ -49,26 +49,3 @@ with open('movier_naver.csv', 'w', encoding='utf-8', newline='') as f:
     write.writeheader()
     for l in ssafy:   
         write.writerow(l)
-
-
-
-# {'display': 1,
-#  'items': [{'actor': '유해진|윤계상|',
-#             'director': '엄유나|',
-#             'image': 'https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167699_P4
-# 0_175859.jpg',
-#             'link': 'https://movie.naver.com/movie/bi/mi/basic.nhn?code=167699',
-
-#             'pubDate': '2018',
-#             'subtitle': 'MAL·MO·E: The Secret Mission',
-#             'title': '<b>말모이</b>',
-#             'userRating': '9.04'}],
-#  'lastBuildDate': 'Fri, 18 Jan 2019 16:23:49 +0900',
-#  'start': 1,
-#  'total': 1}
-
-# 3. 네이버 화 검색 API
-# 앞서 진위에서 얻은 화명(국문)을 바탕으로 네이버 화 검색 API를 통해 추가적인 데이터를 수집합니다. 
-# 해 당 데이터는 향후 화평점서비스에서 기준 평점 및 화 포스터 썸네일로 활용될 것입니다.
-# 요청 화명을 통해 요청합니다. 응답 화별로 다음과 같은 내용을 저장합니다. 진위 화 대표코드, 
-# 화 썸네일 이미지의 URL, 하 이퍼텍스트 link, 유저 평점 해당 결과를 movie_naver.csv에 저장합니다.

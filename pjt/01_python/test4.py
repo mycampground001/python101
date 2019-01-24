@@ -24,8 +24,4 @@ for i in range(len(movieCd)):
         imagin = requests.get(image[i]).content
         g.write(imagin)
 
-# for i in range(len(info)):
-#     fname = info[i]['영화코드']
-#     with open(f'{fname}.jpg','wb') as g:
-#         image = requests.get(naver_info[i]['이미지 url ']).content
-#         g.write(image)
+
